@@ -37,4 +37,4 @@ jobs:
     - name: Run container from ECR image
       run: |
         docker pull ${{ secrets.ECR_REGISTRY }}/${{ secrets.ECR_REPOSITORY }}:latest
-        docker run -d -p 80:5000 --name flask-app ${{ secrets.ECR_REGISTRY }}/${{ secrets.ECR_REPOSITORY }}:latest
+        docker run -d -p 80:5005 --name flask-app ${{ secrets.ECR_REGISTRY }}/${{ secrets.ECR_REPOSITORY }}:latest
